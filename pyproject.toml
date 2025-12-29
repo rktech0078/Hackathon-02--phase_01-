@@ -1,0 +1,20 @@
+[project]
+name = "phase-01"
+version = "0.1.0"
+description = "Todo CLI Application - A Python-based in-memory command-line Todo application"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "rich>=13.0.0"
+]
+
+[project.scripts]
+todo = "main:main"
+
+[tool]
+[tool.ruff]
+line-length = 88
+
+[tool.black]
+line-length = 88
+target-version = ['py313']
